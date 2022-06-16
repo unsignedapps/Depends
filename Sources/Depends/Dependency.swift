@@ -1,6 +1,6 @@
 //===----------------------------------------------------------------------===//
 //
-// This source file is part of the SwiftNIO open source project
+// This source file is part of the Depends open source project
 //
 // Copyright (c) 2021 Unsigned Apps
 // Licensed under MIT License

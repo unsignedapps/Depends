@@ -1,6 +1,6 @@
 //===----------------------------------------------------------------------===//
 //
-// This source file is part of the SwiftNIO open source project
+// This source file is part of the Depends open source project
 //
 // Copyright (c) 2017-2018 Apple Inc. and the SwiftNIO project authors
 // Licensed under Apache License v2.0
