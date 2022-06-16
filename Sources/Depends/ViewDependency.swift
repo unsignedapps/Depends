@@ -24,14 +24,15 @@ import SwiftUI
 ///
 @propertyWrapper
 @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-public struct ViewDependency<DependencyType> {
+public struct ViewDependency<DependencyType>: DynamicProperty {
 
     // MARK: - Properties
 
+    @Environment(\.dependencies) private var dependencies
+
     /// The dynamically looked up dependency
     public var wrappedValue: DependencyType {
-        let registry = Environment(\.dependencies).wrappedValue
-        return registry.dependency(for: self.key)
+        dependencies.dependency(for: self.key)
     }
 
     private let key: DependencyKey<DependencyType>
